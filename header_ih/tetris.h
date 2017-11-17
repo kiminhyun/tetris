@@ -1,3 +1,4 @@
+#pragma once
 #include<stdio.h>
 #include<string.h>
 #include<signal.h>
@@ -18,6 +19,7 @@
 
 void block_shape(void);
 int collision(int command);
+int move_block(int command);
 
 extern char I_block[4][4][4];
 extern char T_block[4][4][4];
@@ -33,3 +35,4 @@ extern int y;
 extern int block_state;
 extern int block_num;
 extern int next_block_num;
+extern long point;
