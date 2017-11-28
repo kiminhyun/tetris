@@ -1,4 +1,4 @@
-DIRS = src_yj Tetris
+DIRS = src_yj
 all :
 	@for d in $(DIRS);\
 	do\
