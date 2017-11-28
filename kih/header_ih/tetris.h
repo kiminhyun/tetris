@@ -3,6 +3,9 @@
 #include<string.h>
 #include<signal.h>
 #include<time.h>
+#include<signal.h>
+#include<sys/time.h>
+#include<sys/type.h>
 
 #define LEFT 0
 #define RIGHT 1
@@ -18,9 +21,12 @@
 #define O_BLOCK 6
 
 void block_shape(void);
+void line_clear(void);
+void display_tetris(void);
 int collision(int command);
 int move_block(int command);
 int drop(void);
+int clear(int num);
 
 extern char I_block[4][4][4];
 extern char T_block[4][4][4];
@@ -36,4 +42,7 @@ extern int y;
 extern int block_state;
 extern int block_num;
 extern int next_block_num;
+extern int delete_line;
+extern int cnt_range;
+extern int game;
 extern long point;
