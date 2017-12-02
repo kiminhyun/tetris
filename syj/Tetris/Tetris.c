@@ -3,7 +3,7 @@
 #include "level_up_check.h"
 #include "line_clear.h"
 #include "display_tetris.h"
-#include "var.h"
+#include "variable.h"
 
 void main()
 {

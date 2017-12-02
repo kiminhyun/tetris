@@ -1,5 +1,5 @@
-#include "var.h"
 #include "display_tetris.h"
+#include "variable.h"
 
 void display_tetris(void)
 {
@@ -15,17 +15,10 @@ void display_tetris(void)
 
         for(int i=0; i<21; i++)
         {
-
                 for(int j=0; j<10; j++)
-
                 {
-
                         printf("%c",tetris_table[i][j]);
-
                 }
-
                 printf("\n");
-
         }
-
 }

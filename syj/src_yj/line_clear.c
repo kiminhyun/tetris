@@ -1,5 +1,6 @@
 #include "line_clear.h"
-#include "var.h"
+#include "variable.h"
+
 int line_clear(void)
 {
      int i, j;
