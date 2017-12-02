@@ -3,14 +3,29 @@
 
 void display_tetris(void)
 {
-	//system("clear");
-	for(int i=0; i<21; i++)
+
+	for(int i=0; i<20; i++)
 	{
-		for(int j=0; j<10; j++)
+
+		for(int j=1; j<9; j++)
 		{
-			//tetris_table[i][j]='#';
-			printf("%c",tetris_table[i][j]);
+			tetris_table[i][j]='#';
 		}
-		printf("\n");
 	}
+
+        for(int i=0; i<21; i++)
+        {
+
+                for(int j=0; j<10; j++)
+
+                {
+
+                        printf("%c",tetris_table[i][j]);
+
+                }
+
+                printf("\n");
+
+        }
+
 }
