@@ -1,4 +1,4 @@
 Tetris : Tetris.c
-	gcc -0 Tetris Tetris.c -I../header_yj ../src_yj/background_screen.o
+	gcc -o Tetris Tetris.c -I../header_yj -I../../kih/header_ih -L../src_yj -lfuncs
 clean :
 	rm Tetris
