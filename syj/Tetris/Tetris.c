@@ -9,7 +9,8 @@ void main()
 {
 	static int speed;
 	static int delete_line=0;
-	speed = start_screen();
+	speed = 5;
+	start_screen();
 
 	background_screen(speed,delete_line);
 	display_tetris();
