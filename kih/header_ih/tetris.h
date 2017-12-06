@@ -1,11 +1,20 @@
 #pragma once
-#include<stdio.h>
-#include<string.h>
-#include<signal.h>
-#include<time.h>
-#include<signal.h>
-#include<sys/time.h>
-#include<sys/type.h>
+#include <stdio.h>
+#include <string.h>
+#include <signal.h>
+#include <time.h>
+#include <signal.h>
+#include <sys/time.h>
+#include <sys/type.h>
+#include <sys/ioctl.h>
+#include <unistd.h>
+#include <termios.h>
+
+#define CCHAR 0
+#ifdef CTIME
+#undef CTIME
+#endif
+#define CTIME 1
 
 #define LEFT 0
 #define RIGHT 1
@@ -19,6 +28,9 @@
 #define L1_BLOCK 4
 #define L2_BLOCK 5
 #define O_BLOCK 6
+
+#define GAME_START 0
+#define GAME_END 1
 
 void block_shape(void);
 void line_clear(void);
