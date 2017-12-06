@@ -1,7 +1,7 @@
 #include "line_clear.h"
 #include "variable.h"
 
-int line_clear(void)
+void line_clear(void)
 {
      int i, j;
      int ti, tj;
@@ -31,5 +31,4 @@ int line_clear(void)
              }
          }
      }
-	return delete_line;
 }
