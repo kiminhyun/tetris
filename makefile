@@ -1,4 +1,4 @@
-DIRS = syj tetris
+DIRS = syj Tetris kih
 
 all:
 	@for d in $(DIRS);\

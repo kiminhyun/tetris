@@ -1,6 +1,5 @@
 #include "start_screen.h"
-#include "background_screen.h"
-#include "level_up_check.h"
+#include "init_tetris_table.h"
 #include "line_clear.h"
 #include "display_tetris.h"
 #include "variable.h"
@@ -12,12 +11,21 @@ char tetris_table[21][10];
 void main()
 {
 	//static int speed;
+	int GAME_START;
+
 	delete_line=0;
 	countrange = 5;
-	start_screen();
+	init_tetris_table();
 
-	background_screen();
-	display_tetris();
-	line_clear();
-	level_up_check();
+	GAME_START = start_screen();
+
+	if(GAME_START==1)
+	{
+		display_tetris();
+		line_clear();
+	}
+	if(GAME_START==2)
+	{
+		return;
+	}
 }

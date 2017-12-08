@@ -22,6 +22,7 @@
 #define DOWN 2
 #define UP 3
 
+#define I_BLOCK 0
 #define T_BLOCK 1
 #define S_BLOCK 2
 #define Z_BLOCK 3
