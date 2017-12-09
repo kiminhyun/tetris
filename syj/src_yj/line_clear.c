@@ -1,5 +1,5 @@
 #include "line_clear.h"
-#include "variable.h"
+#include "tetris.h"
 
 void line_clear(void)
 {

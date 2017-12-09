@@ -1,5 +1,5 @@
 #include "init_tetris_table.h"
-#include "variable.h"
+#include "tetris.h"
 
 
 void init_tetris_table(void)

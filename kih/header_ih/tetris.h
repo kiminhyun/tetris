@@ -35,10 +35,12 @@
 void block_shape(void);
 void line_clear(void);
 void display_tetris(void);
+void init_tetris_table(void);
 int collision(int command);
 int move_block(int command);
 int drop(void);
 int clear(int num);
+
 
 extern char I_block[4][4][4];
 extern char T_block[4][4][4];
@@ -58,3 +60,6 @@ extern int delete_line;
 extern int cnt_range;
 extern int game;
 extern long point;
+extern int countrange;
+extern int delete_line;
+extern int game;

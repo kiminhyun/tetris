@@ -3,28 +3,26 @@
 #include "line_clear.h"
 #include "display_tetris.h"
 
-#include "variable.h"
-#include "getch.h"
+#include "tetris.h"
 #include "source.h"
 #include "init_extern_variable.h"
 
 void main()
 {
-	int GAME_START;
+	int menu;
 
-	delete_line=0;
-	countrange = 5;
-	init_tetris_table();
+	menu = start_screen();
 
-	GAME_START = start_screen();
-
-	if(GAME_START==1)
+	while(1)
 	{
-		display_tetris();
-		line_clear();
-	}
-	if(GAME_START==2)
-	{
-		return;
+		if(menu==1)
+		{
+			game = GAME_START;
+			game_start();
+		}
+		if(menu==2)
+		{
+			exit(0);
+		}
 	}
 }

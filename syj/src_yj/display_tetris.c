@@ -1,5 +1,5 @@
 #include "display_tetris.h"
-#include "variable.h"
+#include "tetris.h"
 
 void display_tetris(void)
 {
