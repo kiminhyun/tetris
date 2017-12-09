@@ -5,7 +5,7 @@
 #include <time.h>
 #include <signal.h>
 #include <sys/time.h>
-#include <sys/type.h>
+#include <sys/types.h>
 #include <sys/ioctl.h>
 #include <unistd.h>
 #include <termios.h>

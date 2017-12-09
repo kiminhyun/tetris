@@ -37,9 +37,9 @@ int collision(int command)
 			temp_tetris_table[i][j] = tetris_table[i][j];
 		}
 	}
-	for(i=0,oldy=y; i<4;i++,oldy++;)
+	for(i=0,oldy=y; i<4;i++,oldy++)
 	{
-		for(j=0,oldx=x; j<4; j++,oldx++;)
+		for(j=0,oldx=x; j<4; j++,oldx++)
 		{
 			if(oldx>0 && oldx<9 && oldy<20 && oldy>0)
 			{

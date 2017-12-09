@@ -1,4 +1,4 @@
-#include "teteis.h"
+#include "tetris.h"
 
 int clear(int num)
 {
